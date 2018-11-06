@@ -14,7 +14,7 @@ try {
    }
 }catch (e) {
    //if tests fail, we can use a shell script which has 3 APIs to undeploy, delete current revision & deploy previous revision
-   //sh "$WORKSPACE/undeploy.sh"
+   sh "$WORKSPACE/undeploy.sh"
    throw e
   } finally {
    
@@ -27,7 +27,7 @@ try {
   }
   } catch (e) {
    //if tests fail, we can use a shell script which has 3 APIs to undeploy, delete current revision & deploy previous revision
-   //sh "$WORKSPACE/undeploy.sh"
+   sh "$WORKSPACE/undeploy.sh"
    throw e
   } finally {
    
